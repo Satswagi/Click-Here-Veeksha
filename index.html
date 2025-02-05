@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>To You Bangaram.</strong>
+                        <p>
+                          I honestly dont know where to begin. I am so blindly obsessed with you, it's actually
+                          a little concerning. Naa Bangaram ra Nuvvu. I thought i'd make this letter very romantic and heart-touching, but honestly, all i feel right now is 
+                          raw emotion. I love you veeksha.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
